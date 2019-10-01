@@ -6,28 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="api2.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coda|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <title>API</title>
 </head>
 
 <body>
+    
     <h1>City Air API</h1>
     <!-- <button id="getData">Search</button> -->
     <form id="getInfo">
         <div class="searchBar">
+            <!-- <img src="icons8-help-24.png"> -->
             <input type="text" id="searchInput" placeholder="enter city">
 
             <button class="submit">Search</button>
         </div>
     </form>
-    <div id="results">
+    <!-- Results -->
+    <div id="results" >
         <p id="error"></p>
-        <ul id="info">
+        <ul id="info"class="animated rollIn">
 
 
         </ul>
     </div>
-
-
+    <!-- How to Use -->
+    
+    <ol title="How To Use">
+        <h2>How To Use</h2>
+        <li>Enter in a city name e.g.(Dehli, St. Louis etc...)</li>
+        <li>Press Search to see information.</li>
+        <li>Results and measurements will vary from city to city.</li>
+        <li>If results are not available an error will show.</li>
+        <li>Enter a new city to clear results.</li>
+    </ol>
+    <!-- Legend -->
+    <div class="legend">
+        <h2 id="bottomH2">What am I seeing?</h2>
+        <h4>BC</h4>
+        <a href="https://www.epa.gov/air-research/black-carbon-research"><p>Black Carbon</p></a>&nbsp;<p>Black carbon is the sooty black material emitted from sources that burn fossil fuel. It comprises a significant portion of particulate matter or PM, which is an air pollutant.</p>
+        <h4>CO</h4>
+        <a href="https://www.cdc.gov/co/faqs.htm"><p>Carbon Monoxide</p></a>&nbsp;<p>Carbon monoxide (CO), an odorless, colorless gas, which can cause sudden illness and death, is produced any time a fossil fuel is burned.</p>
+        <h4>NO2</h4>
+        <a href="https://www.greenfacts.org/en/nitrogen-dioxide-no2/"><p>Nitrogen Dioxide</p></a>&nbsp;<p>Nitrogen Dioxide (NO2) is one of a group of highly reactive gases known as oxides of nitrogen or nitrogen oxides (NOx).</p>
+        <h4>O3</h4>
+        <a href="https://airnow.gov/index.cfm?action=aqibasics.ozone"><p>Ozone</p></a>&nbsp;<p>Ozone is a gas composed of three atoms of oxygen. </p>
+        <h4>PM10</h4>
+        <a href="https://airnow.gov/index.cfm?action=aqibasics.particle"><p>Particulate Matter 10 micrometers</p></a>&nbsp;<p> Inhalable particles, with diameters that are generally 10 micrometers and smaller.</p>
+        <h4>PM2.5</h4>
+        <a href="https://www.epa.gov/pm-pollution/particulate-matter-pm-basics"><p>Particulate Matter 2.5 micrometers</p></a>&nbsp;<p> Fine inhalable particles, with diameters that are generally 2.5 micrometers and smaller.</p>
+        <h4>SO2</h4>
+        <a href="https://www.epa.gov/so2-pollution/sulfur-dioxide-basics"><p>Sulfur Dioxide</p></a>&nbsp;<p>Sulfur dioxide is a gas. It is invisible and has a nasty, sharp smell. It reacts easily with other substances to form harmful compounds:(sulfuric acid, sulfurous acid and sulfate particles.)</p>
+    </div>
 
     <script type="text/javascript" src="api2.js"></script>
 </body>
