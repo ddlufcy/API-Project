@@ -27,6 +27,7 @@ h1{
 }
 #info{
     margin:0;
+    border-radius: 10px;
 }
 button{
     height: 2.2em;
@@ -46,7 +47,8 @@ button:focus{
     padding-left: 0;
     width :90vw;
     text-align: center;
-    
+    border-radius: 10px;
+
 }
 a:visited{
     color: red;
@@ -68,12 +70,13 @@ ol{
     position: fixed;
     top: 30vh;
     font-family: 'Rubik', sans-serif;
+    font-size: 16px;
 }
 /* Legend */
 .legend{
 position: fixed;
 bottom: 10px;
-padding-left: 5px;
+padding-left: 7px;
 font-family: 'Rubik', sans-serif;
 }
 h2:first-of-type{
@@ -81,6 +84,7 @@ h2:first-of-type{
 }
 #bottomH2{
     margin-bottom: .4em;
+    font-variant: stacked-fractions;
 }
 h3{
     margin:0;
